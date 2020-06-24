@@ -1,0 +1,36 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #FF6700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF6700;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container{
+  padding: 0;
+}
+
+.btn.btn-primary, .btn.btn-primary:hover, .btn.btn-primary:active{
+  background-color: #FF6700;
+  background: #FF6700;
+  border-color: #FF6700;
+}
