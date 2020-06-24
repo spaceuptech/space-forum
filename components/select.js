@@ -9,9 +9,13 @@ export default function Select (){
                 <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css"/>
                 <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css"/>  
             </Head>
+            <br/>
             
+            <br/>
+            <br/>
+            <br/>
             <div className="columns">
-                <div className="column col-sm-8 col-lg-11">
+                <div className="column col-xs-7 col-sm-8 col-md-7 col-lg-11">
                      <div className="padding">
                       
                              
@@ -26,7 +30,7 @@ export default function Select (){
                     </div> 
                 </div>
 
-                <div className="column col-sm-4 col-lg-1">
+                <div className="column col-xs-5 col-sm-4 col-md-5 col-lg-1">
           
                     <button className="btn btn-primary hide-sm">Category<i className="icon icon-arrow-down"/></button>
                     <button className="btn hide-sm"> <i className="icon icon-plus"/>New Topic</button>
