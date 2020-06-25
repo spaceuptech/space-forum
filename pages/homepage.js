@@ -7,7 +7,6 @@ import Posts from '../components/posts'
          
          <div>
              <TopBar/>
-             
              <Select/>
              <Posts />
              <Posts />

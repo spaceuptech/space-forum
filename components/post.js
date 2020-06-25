@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import TopBar from './topbar'
+import DisplayReplies from './replies'
+import EmptyStateReply from './emptystatereply'
+
 export default function Post(){
     return(
         <div>
@@ -16,46 +19,42 @@ export default function Post(){
            <br/>
            <br/>
            <br/>
-             
-             <div className="columns">
+         <div className="columns">
+
+
              <div className="column col-12 t">
                  <p className="qname">Lorem ipsum dolor sit amet</p>
                  <div className="hide-sm">
                  <ul>
                 <li className="cat">General</li>
                 </ul>
-               
                  </div>
                  <div className="show-sm">
                  <ul>
                 <li className="cat">General</li>
                 </ul>
-               
                  </div>
                  <hr className="divide"/>
               
             </div>
                  
              
-
-                        
-             
             <div className="column col-12 con">
                 <div className="columns gapless inner">
-                <div className="col-6">
-                    <div className="go-left">
-                        <figure data-initial="S" className="avatar avatar-md"/>
-                        <p className="username">Shreya Laheri</p>
-                    </div>
+                        <div className="col-6">
+                            <div className="go-left">
+                                <figure data-initial="S" className="avatar avatar-md"/>
+                                    <p className="username">Shreya Laheri</p>
+                            </div>
+                        </div>
+                        <div className="col-6">
+                            <div className="go-right">
+                                <i className="icon  icon-edit"/>
+                                <p className="smalldate">14th May</p>
+                            </div>
+                        </div>
                 </div>
-                <div className="col-6">
-                    <div className="go-right">
-                    <i className="icon  icon-edit"/>
-                    <p className="smalldate">14th May</p>
-                       
-                    </div>
-                </div>
-                </div>
+                
             </div>
 
 
@@ -66,15 +65,15 @@ export default function Post(){
                 <button className="btn btn-action r"> <i className="material-icons r">reply</i></button>
                 <p className="replytext">Reply</p>
                  </div>
-                 </div>
-                
-                
+                 </div>    
             </div>
 
-             </div>
-
-             
-             
         </div>
-    )
+        <DisplayReplies/>
+        <EmptyStateReply/>
+    </div>
+   
+   )
+
+
 }

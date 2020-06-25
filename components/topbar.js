@@ -24,16 +24,29 @@ export default function TopBar (){
                 
                 <section className="navbar-section">
                 <div className="hide-sm" style={{'marginRight':'40px'}}>
-                <div className="company" style={{'width':'90%','marginTop':'5px','marginBottom':'3px'}}>
+                <div className="company top" >
                   <p>Powered by Space Cloud</p>
                   <img src="/spaceship.jpg" className="spaceship" alt="oops"/>
                 </div>
                   
                 </div>
-                <figure  className="avatar avatar-lg a">
-                <i className="material-icons">perm_identity</i>
-            
-                </figure>
+                <div className="dropdown ">
+                         
+                         <a href="#"className="dropdown-toggle" tabIndex="0">
+                        <figure  className="avatar avatar-lg a">
+                        <i className="material-icons">perm_identity</i>
+                        </figure>
+                      
+                        </a>
+                        <div className="menu left">
+                        <ul >
+                        <a  href="#">Logout</a>
+                        </ul>
+                         </div>
+                        
+                        
+                        </div>
+                
                
                 </section>
               </header>

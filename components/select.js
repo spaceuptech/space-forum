@@ -15,8 +15,8 @@ export default function Select (){
             <br/>
             <br/>
             <div className="columns">
-                <div className="column col-xs-7 col-sm-8 col-md-7 col-lg-11">
-                     <div className="padding">
+                <div className="column col-xs-7 col-sm-8 col-md-6 col-lg-11">
+                     <div className="padding a">
                       
                              
                          
@@ -30,9 +30,19 @@ export default function Select (){
                     </div> 
                 </div>
 
-                <div className="column col-xs-5 col-sm-4 col-md-5 col-lg-1">
+                <div className="column col-xs-5 col-sm-4 col-md-6 col-lg-1">
           
-                    <button className="btn btn-primary hide-sm">Category<i className="icon icon-arrow-down"/></button>
+                <div className="dropdown">
+                     <div className="btn-group">
+                        <a href="#" className="btn btn-primary hide-sm  dropdown-toggle" tabindex="0">
+                        Category
+                        <i className="icon icon-arrow-down"/>
+                        </a>
+                        <ul className="menu">
+                        <a  href="#">General</a>
+                        </ul>
+                        </div>
+                        </div>
                     <button className="btn hide-sm"> <i className="icon icon-plus"/>New Topic</button>
                     <button className="btn btn-action show-sm"><i className="icon icon-plus"></i></button>
                     <button className="btn btn-action show-sm a">

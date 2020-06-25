@@ -11,7 +11,8 @@
     "next": "9.4.4",
     "next-react-svg": "^1.1.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-rte": "^0.16.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",
