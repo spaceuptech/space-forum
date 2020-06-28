@@ -1,14 +1,14 @@
-import { Component } from 'react';
-const isBrowser = typeof window !== 'undefined';
+import { Component } from "react";
+const isBrowser = typeof window !== "undefined";
 let RichTextEditor;
 if (isBrowser) {
-  RichTextEditor = require('react-rte').default;
+  RichTextEditor = require("react-rte").default;
 }
 
 export default class MyEditor extends Component {
   state = {
-    value: RichTextEditor ? RichTextEditor.createEmptyValue() : ""
-  }
+    value: RichTextEditor ? RichTextEditor.createEmptyValue() : "",
+  };
 
   onChange = (value) => {
     this.setState({ value });
@@ -16,22 +16,23 @@ export default class MyEditor extends Component {
       // Send the changes up to the parent component as an HTML string.
       // This is here to demonstrate using `.toString()` but in a real app it
       // would be better to avoid generating a string on each change.
-      this.props.onChange(
-        value.toString('html')
-      );
+      this.props.onChange(value.toString("html"));
     }
   };
 
   render() {
     return (
       <div>
-        {RichTextEditor &&
-          <RichTextEditor placeholder="Type here" type="submit" className="replybox"
+        {RichTextEditor && (
+          <RichTextEditor
+            placeholder="Type here"
+            type="submit"
+            className="replybox"
             value={this.state.value}
             onChange={this.onChange}
-          />}
+          />
+        )}
       </div>
-
-    )
+    );
   }
 }

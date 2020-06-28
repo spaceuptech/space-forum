@@ -1,8 +1,10 @@
+import PostDescription from "../components/post-description";
+import DisplayReplies from "../components/replies";
+import AddReply from "../components/add-reply";
 import TopBar from "../components/topbar";
-import Select from "../components/select";
-import Post from "../components/post";
 import Head from "next/head";
-export default function Home() {
+
+export default function PostDetail() {
   return (
     <div>
       <Head>
@@ -25,13 +27,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-
       <TopBar />
-      <Select />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      <PostDescription />
+      <DisplayReplies />
+      <AddReply />
     </div>
   );
 }
