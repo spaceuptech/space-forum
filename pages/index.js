@@ -1,18 +1,8 @@
-import Head from 'next/head'
-
-export default function Home() {
+import Home from "./homepage";
+export default function SpaceForum() {
   return (
-    <div className="container">
-      <Head>
-        <title>Space Forum</title>
-      </Head>
-
-      <main>
-        <h1 className="title">
-          Hello world
-        </h1>
-
-      </main>
+    <div>
+      <Home />
     </div>
-  )
+  );
 }
