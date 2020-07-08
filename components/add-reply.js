@@ -1,4 +1,3 @@
-
 import MyEditor from "./markdown";
 
 export default function AddReply() {

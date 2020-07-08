@@ -1,4 +1,4 @@
-import Service from './services/service'
+import Service from "./services/service";
 
-const client = new Service('myproject','http://localhost:4122')
-export default client
+const client = new Service("myproject", "http://localhost:4122");
+export default client;

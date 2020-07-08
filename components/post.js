@@ -1,24 +1,19 @@
-
 import Link from "next/link";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 export default function Post() {
-  const router= useRouter()
-  const handleClick=(e)=>{
-    router.push("/post-detail") 
-    
-  }
+  const router = useRouter();
+  const handleClick = (e) => {
+    router.push("/post-detail");
+  };
   return (
     <div>
       <div onClick={handleClick} className="columns gapless a">
-        <div  className="column col-sm-12 col-7 ">
-          <p className="q">
-            Lorem ipsum dolor sit amet
-          </p>
+        <div className="column col-sm-12 col-7 ">
+          <p className="q">Lorem ipsum dolor sit amet</p>
           <ul>
             <li className="cat">General</li>
           </ul>
-         
         </div>
         <div className="column col-sm-12 col-5 ">
           <div className="columns gapless">

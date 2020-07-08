@@ -189,7 +189,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
-  color: rgba(0, 0, 0, 0.25);
+  color: black;
   height: 32px;
   text-indent: 18px;
 }
@@ -205,24 +205,32 @@
 }
 .cat {
   margin-bottom: 8px;
-  
+
   color: rgba(79, 79, 79, 0.904);
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
 }
-.form-input:focus{
-  border-color:#d9d9d9;
-  box-shadow:none;
-  
+.form-input:focus {
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+.btn.btn-action.btn-sm.edit {
+  border: none;
+  background-color: white;
 }
 a:visited {
-  color: none; 
+  color: #595959;
 }
-a:active, a:focus, a:hover {
-  color: none;
-  text-decoration: underline;
+a {
+  color: #595959;
+}
+a:active,
+a:focus,
+a:hover {
+  color: #595959;
+  text-decoration: none;
 }
 .q {
   font-family: Arial, Helvetica, sans-serif;
@@ -500,12 +508,7 @@ ul li::before {
     margin-inline-start: 37px;
   }
 }
-.navlink {
-  color: rgb(66, 10, 129);
-  font-size: 12px;
-  margin-left: 5px;
-  margin-bottom: 10px;
-}
+
 .column.col-12.t {
   margin: 10px;
   margin-top: 0px;
@@ -663,7 +666,7 @@ ul li::before {
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
   border-radius: 4px;
-  color: #807e7e;
+  color: black;
 
   margin-bottom: 20px;
   font-style: normal;

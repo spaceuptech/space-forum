@@ -31,7 +31,9 @@ export default function PostDescription() {
             </div>
             <div className="col-6">
               <div className="go-right">
-                <i className="icon  icon-edit" />
+                <button className="btn btn-action btn-sm edit">
+                  <i className="icon  icon-edit" />
+                </button>
                 <p className="smalldate">14th May</p>
               </div>
             </div>
