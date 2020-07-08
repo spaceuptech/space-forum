@@ -127,6 +127,13 @@
 }
 
 @media screen and (max-width: 480px) {
+  .columns.gapless.a {
+    margin: 15px;
+    box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    margin-right: 0px;
+  }
   .smalldate {
     font-style: normal;
     font-weight: normal;
@@ -329,7 +336,7 @@ a {
   border: solid #ff6700;
   float: right;
   align-items: center;
-  margin-right: 15px;
+  margin-right: 0px;
   display: flex;
   align-items: center;
   text-align: right;
