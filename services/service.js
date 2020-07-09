@@ -2,7 +2,7 @@ import { ApolloClient } from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { HttpLink } from "apollo-link-http";
 //import { setContext } from 'apollo-link-context';
-function InitClient(projectId, url) {
+function initClient(projectId, url) {
   const httpLink = new HttpLink({
     uri: `${url}/v1/api/${projectId}/graphql`
   });
@@ -25,13 +25,13 @@ function InitClient(projectId, url) {
   // Instantiate client
   const client = new ApolloClient({
     cache: new InMemoryCache({ addTypename: false }),
-    link: httpLink.concat(httpLink),
+    link: httpLink
   });
   return client;
 }
 
 export default class Service {
   constructor(projectId, url) {
-    this.client = InitClient(projectId, url);
+    this.client = initClient(projectId, url);
   }
 }
