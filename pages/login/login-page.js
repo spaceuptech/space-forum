@@ -35,7 +35,7 @@ export default function Login() {
             </div>
           </div>
           <div className={style.loginFooter}>
-            Need an account?
+           <span>Need an account?</span> 
             <Link href="/signup/signup-page">
               <a> Sign up!</a>
             </Link>
