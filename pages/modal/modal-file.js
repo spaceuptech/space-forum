@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Editor from '../../components/editor'
 import Autocomplete from '../../components/autocomplete'
+import style from '../style.module.css'
 
 export default function Modal() {
   return (
@@ -29,11 +30,6 @@ export default function Modal() {
                 </div>
                 <div class="form-group">
                   <label class="form-label">Category</label>
-                  {/* <select name="cars" id="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                  </select> */}
                   <Autocomplete
                   suggestions={[
                     "Alligator",
@@ -56,7 +52,7 @@ export default function Modal() {
               </div>
             </div>
             <div class="modal-footer">
-              <button class="btn-primary btn">Post</button>
+              <button className={style.postBtn}>Post</button>
             </div>
           </div>
         </div>
