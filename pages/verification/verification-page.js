@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import style from '../style.module.css'
 import Link from 'next/link'
+import Topbar from '../../components/topbar'
 
 export default function Verify() {
   return (
@@ -12,6 +13,7 @@ export default function Verify() {
         <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css" />
       </Head>
 
+      <Topbar />
       <center>
         <main className={style.verifyLayout}>
           <div className={style.verifyContainer}>
