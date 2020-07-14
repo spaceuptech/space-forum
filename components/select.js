@@ -1,14 +1,12 @@
 export default function Select() {
   return (
-    <div>
-      <br />
-
+    <div className="filter_panel">
       <br />
       <br />
       <br />
       <div className="columns">
         <div className="column col-xs-7 col-sm-8 col-md-6 col-lg-11">
-          <div className="padding a">
+          <div className="padding">
             <div className="has-icon-left">
               <input type="text" className="form-input" placeholder="Search" />
               <i className="form-icon icon icon-search"></i>
@@ -34,16 +32,16 @@ export default function Select() {
           </div>
           <button className="btn hide-sm">
             {" "}
-            <i className="icon icon-plus" />
+            <i className="icon icon-plus one" />
             New Topic
           </button>
-          <button className="btn btn-action show-sm">
-            <i className="icon icon-plus a"></i>
+          <button className="btn btn-action show-sm one">
+            <i className="icon icon-plus two"></i>
           </button>
-          <button className="btn btn-action show-sm a">
-            <div className="diva"></div>
-            <div className="div"></div>
-            <div className="divb"></div>
+          <button className="btn btn-action show-sm two">
+            <div className="div top"></div>
+            <div className="div mid"></div>
+            <div className="div bottom"></div>
           </button>
         </div>
       </div>

@@ -1,13 +1,12 @@
 export default function TopBar() {
   return (
-    <div>
+    <div className="topbar">
       <div className="columns">
         <div className="column col-12">
-          <header className="navbar a">
+          <header className="navbar">
             <section className="navbar-section">
               <div className="padding">
                 <img
-                  style={{ marginTop: "5px", marginBottom: "5px" }}
                   src="/logo-black.svg"
                   className="logo"
                   alt="SpaceUpCloud"
@@ -17,14 +16,14 @@ export default function TopBar() {
 
             <section className="navbar-section">
               <div className="hide-sm" style={{ marginRight: "40px" }}>
-                <div className="company top">
+                <div className="company-name top">
                   <p className="copyrights">Powered by Space Cloud</p>
                   <img src="/spaceship.jpg" className="spaceship" alt="oops" />
                 </div>
               </div>
               <div className="dropdown ">
                 <a href="#" className="dropdown-toggle" tabIndex="0">
-                  <figure className="avatar avatar-lg a">
+                  <figure className="avatar avatar-lg ">
                     <i className="material-icons">perm_identity</i>
                   </figure>
                 </a>
@@ -38,7 +37,7 @@ export default function TopBar() {
           </header>
         </div>
         <div className="column col-12 footer show-xs">
-          <div className="company">
+          <div className="company-name">
             <p>Powered by Space Cloud</p>
             <img src="/spaceship.jpg" className="spaceship" alt="oops" />
           </div>
