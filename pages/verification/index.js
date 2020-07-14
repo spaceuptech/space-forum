@@ -21,8 +21,8 @@ export default function Verify() {
             <div className={style.verifyTitle}>Verification</div>
             <div className={style.verifyDesc}>We have sent you a verification code on your email at sh********************</div>
             <div className={style.verifyInput}>
-              <div class="form-group">
-                <input class="form-input" type="text" placeholder="Enter 6 digit verification code" />
+              <div className="form-group">
+                <input className="form-input" type="text" placeholder="Enter 6 digit verification code" />
               </div>
             </div>
             <button className={style.verifyBtn}>

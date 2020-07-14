@@ -20,31 +20,31 @@ export default function Signup() {
                 <img src="/logo-black.svg" alt="logo" />
               </center>
               <div className={style.loginForm}>
-                <div class="form-group">
-                  <label class="form-label">Name</label>
-                  <input class="form-input" type="text" placeholder="Your name" />
+                <div className="form-group">
+                  <label className="form-label">Name</label>
+                  <input className="form-input" type="text" placeholder="Your name" />
                 </div>
-                <div class="form-group">
-                  <label class="form-label">Email</label>
-                  <input class="form-input" type="text" placeholder="Your email address" />
+                <div className="form-group">
+                  <label className="form-label">Email</label>
+                  <input className="form-input" type="text" placeholder="Your email address" />
                 </div>
-                <div class="form-group">
-                  <label class="form-label">Password</label>
-                  <input class="form-input" type="password" placeholder="Type your password" />
+                <div className="form-group">
+                  <label className="form-label">Password</label>
+                  <input className="form-input" type="password" placeholder="Type your password" />
                 </div>
-                <div class="form-group">
-                  <label class="form-label">Confirm Password</label>
-                  <input class="form-input" type="password" placeholder="Confirm your password" />
+                <div className="form-group">
+                  <label className="form-label">Confirm Password</label>
+                  <input className="form-input" type="password" placeholder="Confirm your password" />
                 </div>
-              </div>
               <center>
-                <button class="btn btn-primary btn-lg">Signup</button>
+                <button className={style.verifyBtn}>Signup</button>
               </center>
+              </div>
             </div>
           </div>
           <div className={style.loginFooter}>
             Already have an account?
-            <Link href="/login/login-page">
+            <Link href="/login">
               <a> Login!</a>
             </Link>
           </div>

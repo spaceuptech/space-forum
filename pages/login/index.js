@@ -20,23 +20,23 @@ export default function Login() {
                 <img src="/logo-black.svg" alt="logo" />
               </center>
               <div className={style.loginForm}>
-                <div class="form-group">
-                  <label class="form-label">Email</label>
-                  <input class="form-input" type="text" placeholder="Type your email address" />
+                <div className="form-group">
+                  <label className="form-label">Email</label>
+                  <input className="form-input" type="text" placeholder="Type your email address" />
                 </div>
-                <div class="form-group">
-                  <label class="form-label">Password</label>
-                  <input class="form-input" type="password" placeholder="Type your password" />
+                <div className="form-group">
+                  <label className="form-label">Password</label>
+                  <input className="form-input" type="password" placeholder="Type your password" />
                 </div>
+                <center>
+                  <button className={style.verifyBtn}>Login</button>
+                </center>
               </div>
-              <center>
-                <button class="btn btn-primary btn-lg">Login</button>
-              </center>
             </div>
           </div>
           <div className={style.loginFooter}>
-           <span>Need an account?</span> 
-            <Link href="/signup/signup-page">
+            <span>Need an account?</span>
+            <Link href="/signup">
               <a> Sign up!</a>
             </Link>
           </div>
