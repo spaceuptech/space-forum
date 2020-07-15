@@ -143,6 +143,7 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+
   .post .columns.gapless.one {
     margin: 15px;
     box-sizing: border-box;
@@ -150,6 +151,7 @@ body {
     border-radius: 4px;
     margin-right: 0px;
   }
+
 
   .pagetwo .smalldate {
     font-style: normal;
@@ -235,19 +237,21 @@ body {
   font-size: 12px;
   line-height: 22px;
 }
+
 .pagetwo .category-type {
   margin-bottom: 8px;
-
   color: rgba(79, 79, 79, 0.904);
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 22px;
 }
+
 .form-input:focus {
   border-color: #d9d9d9;
   box-shadow: none;
 }
+
 
 .pagetwo .btn.btn-action.btn-sm.edit {
   border: none;
@@ -265,6 +269,7 @@ a:hover {
   color: #595959;
   text-decoration: none;
 }
+
 .post .question-title {
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0px;
@@ -548,6 +553,7 @@ a {
     margin-inline-start: 37px;
   }
 }
+
 
 .pagetwo .column.col-12.one {
   margin: 10px;

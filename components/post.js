@@ -7,6 +7,7 @@ export default function Post() {
     router.push("/post-detail");
   };
   return (
+
     <div className="post">
       <div onClick={handleClick} className="columns gapless one">
         <div className="column col-sm-12 col-7 ">

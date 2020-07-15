@@ -1,11 +1,13 @@
 import { ApolloClient } from "apollo-client";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { HttpLink } from "apollo-link-http";
+
 import gql from "graphql-tag";
 //import { setContext } from 'apollo-link-context';
 function initClient(projectId, url) {
   const httpLink = new HttpLink({
-    uri: `${url}/v1/api/${projectId}/graphql`,
+    uri: `${url}/v1/api/${projectId}/graphql`
+
   });
 
   /*// Middleware to pass token in each HTTP request
@@ -26,7 +28,10 @@ function initClient(projectId, url) {
   // Instantiate client
   const client = new ApolloClient({
     cache: new InMemoryCache({ addTypename: false }),
-    link: httpLink,
+
+
+    link: httpLink
+
   });
   return client;
 }
@@ -35,6 +40,7 @@ export default class Service {
   constructor(projectId, url) {
     this.client = initClient(projectId, url);
   }
+
 
  getAllPosts() {
     return new Promise((resolve, reject) => {
@@ -77,4 +83,5 @@ export default class Service {
         .catch((ex) => reject(ex));
     });
   }
+
 }
