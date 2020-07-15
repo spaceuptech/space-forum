@@ -7,17 +7,20 @@ export default function Post() {
     router.push("/post-detail");
   };
   return (
-    <div>
-      <div onClick={handleClick} className="columns gapless a">
+
+    <div className="post">
+      <div onClick={handleClick} className="columns gapless one">
         <div className="column col-sm-12 col-7 ">
-          <p className="q">Lorem ipsum dolor sit amet</p>
-          <ul>
-            <li className="cat">General</li>
-          </ul>
+          <p className="question-title">Lorem ipsum dolor sit amet</p>
+          <div className="question-category">
+            <ul>
+              <li className="category-type">General</li>
+            </ul>
+          </div>
         </div>
         <div className="column col-sm-12 col-5 ">
           <div className="columns gapless">
-            <div className="col-sm-4 col-3 k">
+            <div className="col-sm-4 col-3 one">
               <figure
                 className="avatar avatar-md"
                 data-initial="S"
@@ -35,7 +38,7 @@ export default function Post() {
               />
             </div>
             <div className="col-sm-4 col-3">
-              <h3 className="num">4</h3>
+              <h3 className="count">4</h3>
               <p className="replies">replies</p>
             </div>
             <div className="col-3 hide-sm">
