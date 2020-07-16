@@ -1,3 +1,29 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #FF6700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .navbar.a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -186,20 +212,6 @@
   text-align: right;
   outline: none;
   transition: none;
-}
-
-.form-input {
-  border: 1px solid #d9d9d9;
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 22px;
-  color: black;
-  height: 32px;
-  text-indent: 18px;
 }
 .ava {
   opacity: 0.5;

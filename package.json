@@ -14,7 +14,9 @@
     "next": "9.4.4",
     "next-react-svg": "^1.1.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
     "react-rte": "^0.16.1",
     "subscriptions-transport-ws": "^0.9.16"
   }
